@@ -1,0 +1,27 @@
+# Python Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Byte-compiled / Optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Trained Model Weights & Artifacts (Large Files)
+*.h5
+model.weights.h5
+
+# Local IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Dynamic / Generated Assets (Optional: remove if tracking custom emojis in git)
+# emojis/*.png
