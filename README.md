@@ -292,17 +292,27 @@ Make sure the generated PNG files are present in the `emojis/` directory.
 
 ---
 
-## 📸 GitHub Showcase
+## 📸 Application Screenshots
 
-For a better project showcase, the repository can include screenshots or a short demonstration GIF showing:
-
-* Live webcam feed
-* Face detection
-* Detected emotion
-* Corresponding emoji
-* Application dashboard
-
-If screenshots contain webcam footage, avoid publishing identifiable personal images without consent. A non-identifying demonstration source can be used instead.
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f4668061-9c0a-436b-8b67-6f424147b5bd" alt="Emojify Screenshot 1" width="100%"></td>
+    <td><img src="https://github.com/user-attachments/assets/72858bff-8970-463a-b6a9-ebab68a56df4" alt="Emojify Screenshot 2" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/66765f10-40e1-4372-90ae-5700ba488bff" alt="Emojify Screenshot 3" width="100%"></td>
+    <td><img src="https://github.com/user-attachments/assets/5c0c2946-cf23-46d0-af0b-d5714bf5ae22" alt="Emojify Screenshot 4" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/b0ee8f74-1b18-49bc-b0dc-e701d4ff3605" width="100%"></td>
+    <td><img src="https://github.com/user-attachments/assets/92d642d9-d52b-4cf2-bad7-2decdb60e576" alt="Emojify Screenshot 6" width="100%"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github.com/user-attachments/assets/d890fe50-dd3b-4dec-b916-efa2cddf522c" alt="Emojify Screenshot 7" width="50%">
+    </td>
+  </tr>
+</table>
 
 ---
 
