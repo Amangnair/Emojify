@@ -110,8 +110,8 @@ Dense 7             → Softmax
 
 Before running the project, make sure you have:
 
-* 🐍 Python **3.9–3.11**
-* 📷 A working webcam
+* Python **3.9–3.11**
+* A working webcam
 * Windows 10/11, macOS, or Linux
 * Microsoft Visual C++ Redistributable 2015–2022 on Windows
 
@@ -160,11 +160,47 @@ pip install tensorflow "opencv-python<5.0" customtkinter pillow
 
 > 💡 OpenCV 4.x is recommended for compatibility with the Haar Cascade `CascadeClassifier` used by the application.
 
----
+### 4. Add the Dataset
 
-## 🚀 Usage
+The project uses the FER2013 (Facial Expression Recognition 2013) dataset for training and testing the emotion recognition model.
 
-### 1. Generate Emoji Assets
+The dataset is publicly available through Kaggle and contains 48×48 grayscale facial images across 7 emotion classes: Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise.
+
+Download the FER2013 dataset from Kaggle: [FER-2013](https://www.kaggle.com/datasets/msambare/fer2013?utm_source=chatgpt.com)
+
+The training dataset is **not included in the repository**.
+
+After cloning the repository, create a `data` folder in the **project root directory** and place the dataset directories inside it.
+
+The expected structure is:
+
+```text
+Emojify/
+├── data/
+│   ├── train/
+│   │   ├── angry/
+│   │   ├── disgust/
+│   │   ├── fear/
+│   │   ├── happy/
+│   │   ├── neutral/
+│   │   ├── sad/
+│   │   └── surprise/
+│   │
+│   └── test/
+│       ├── angry/
+│       ├── disgust/
+│       ├── fear/
+│       ├── happy/
+│       ├── neutral/
+│       ├── sad/
+│       └── surprise/
+```
+
+> 📁 Make sure the `train` and `test` directories are placed directly inside `data/`, and that each emotion has its own subdirectory containing the corresponding facial-expression images.
+
+The directory names should match the emotion classes expected by the training configuration.
+
+### 5. Generate Emoji Assets
 
 Generate the high-resolution emoji PNG assets:
 
@@ -174,7 +210,7 @@ python generate_512_emojis.py
 
 The generated images are saved in the `emojis/` directory.
 
-### 2. Train the Model
+### 6. Train the Model
 
 Train the CNN using the images in the `data/` directory:
 
@@ -188,7 +224,7 @@ After successful training, the trained weights are exported as:
 model.weights.h5
 ```
 
-### 3. Run the Application
+### 7. Run the Application
 
 Launch the real-time desktop application:
 
