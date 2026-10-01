@@ -13,6 +13,9 @@ __pycache__/
 *.h5
 model.weights.h5
 
+# Local Dataset / Data Files
+data/
+
 # Local IDE & Editor Settings
 .vscode/
 .idea/
